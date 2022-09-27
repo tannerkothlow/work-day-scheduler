@@ -34,12 +34,19 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  flex-wrap: nowrap;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
+  border: 0px;
+  border-radius: 0px;
   border-top: 1px dashed #000000;
+}
+
+.form-control {
+  border-radius: 0px;
 }
 
 .past {
