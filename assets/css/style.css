@@ -1,7 +1,17 @@
+:root {
+  --darkbkg: rgb(27, 26, 26);
+  --textclr: rgb(233, 232, 230);
+  
+}
+
+* {
+  background-color: var(--darkbkg);
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--darkbkg);
 }
 
 textarea {
@@ -15,10 +25,10 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: var(--darkbkg);
+  color: var(--textclr);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--textclr);
 }
 
 .description {
@@ -37,24 +47,26 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--darkbkg);
   flex-wrap: nowrap;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--darkbkg);
+  color: var(--textclr);
   border: 0px;
   border-radius: 0px;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed var(--textclr);
 }
 
 .form-control {
+  border: 0px solid var(--darkbkg);
   border-radius: 0px;
 }
 
 .past {
   background-color: #d3d3d3;
+  border-left: 4px solid #a1a0a0;
   /* color: white; */
 }
 
@@ -65,6 +77,7 @@ textarea {
 
 .present {
   background-color: #ff6961;
+  border-left: 4px solid #d64c44;
   /* color: white; */
 }
 
@@ -75,6 +88,7 @@ textarea {
 
 .future {
   background-color: #77dd77;
+  border-left: 4px solid #54b854;
   /* color: white; */
 }
 
@@ -85,7 +99,7 @@ textarea {
 
 .saveBtn {
   border: 0px;
-  border-left: 1px solid black;
+  border-left: 4px solid #088ba8;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
