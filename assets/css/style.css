@@ -31,6 +31,22 @@ textarea {
   border-bottom: 10px solid var(--textclr);
 }
 
+#notification {
+  background-color: var(--darkbkg);
+  color: var(--textclr);
+  border: 3px solid var(--textclr);
+  text-align: center;
+  position: fixed;
+  font-size: 20px;
+  padding: 20px;
+  width: 20%;
+  top: 15%;
+  left: 40%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
 .description {
   white-space: pre-wrap;
 }
@@ -57,6 +73,7 @@ textarea {
   border: 0px;
   border-radius: 0px;
   border-top: 1px dashed var(--textclr);
+  width: 100px;
 }
 
 .form-control {
