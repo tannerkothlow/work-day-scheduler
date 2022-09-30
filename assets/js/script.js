@@ -82,10 +82,19 @@ $(".saveBtn").click(function() {
             console.log(notes[i]);
             notes[i] = $(".box-for-" + marker[i]).val();
             console.log(notes[i]);
-
+        
+            displayNotif(marker[i]);
             localStorage.setItem("stored-notes", JSON.stringify(notes));
         };
     };
 });
 
+var displayNotif = function(input) {
+    $("#notification").css("opacity", "1");
+    $("#notification").text("Note saved for " + input);
+    setTimeout(function() {
+        $("#notification").css("opacity", "0");
+    }, 2000);
+    
+}
 
