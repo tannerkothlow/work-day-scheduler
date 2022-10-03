@@ -17,7 +17,7 @@ Finally to add timekeeping to contextualize the note entry fields, we invoke "mo
 ## Installation
 
 N/A Already deployed on GitHub pages. 
-(URL)
+https://tannerkothlow.github.io/work-day-scheduler/
 
 ## Usage
 
